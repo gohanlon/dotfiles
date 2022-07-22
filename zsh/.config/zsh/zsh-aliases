@@ -1,0 +1,61 @@
+#!/bin/sh
+alias j='z'
+alias f='zi'
+#alias g='lazygit'
+alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+alias nvimrc='nvim ~/.config/nvim/'
+
+# alias lvim='nvim -u ~/.local/share/lunarvim/lvim/init.lua --cmd "set runtimepath+=~/.local/share/lunarvim/lvim"'
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+# easier to read disk
+alias df='df -h'     # human-readable sizes
+alias free='free -m' # show sizes in MB
+
+if [[ $TERM == "xterm-kitty" ]]; then
+  alias ssh="kitty +kitten ssh"
+fi
+
+case "$(uname -s)" in
+
+Darwin)
+	# echo 'Mac OS X'
+	alias ls='ls -G'
+	;;
+
+Linux)
+	alias ls='ls --color=auto'
+	;;
+
+CYGWIN* | MINGW32* | MSYS* | MINGW*)
+	# echo 'MS Windows'
+	;;
+*)
+	# echo 'Other OS'
+	;;
+esac
+
+alias g='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gs='git status --short'
+alias ga='git add'
+alias gai='git add --interactive'
+alias gap='git add --patch'
+alias gci='git commit'
+alias gcia='git commit --amend'
+
+# Use fzf to select a file from changed files to git-add
+# Source: https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
+alias gga='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add'
+alias ggap='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add --patch'
+alias ggd='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git diff'
