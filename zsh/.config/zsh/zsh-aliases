@@ -44,6 +44,8 @@ CYGWIN* | MINGW32* | MSYS* | MINGW*)
 	;;
 esac
 
+alias ll='ls -la'
+
 alias g='git status'
 alias gd='git diff'
 alias gdc='git diff --cached'
