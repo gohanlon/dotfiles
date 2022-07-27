@@ -25,10 +25,8 @@ local options = {
   expandtab = true,                        -- convert tabs to spaces
   shiftwidth = 2,                          -- the number of spaces inserted for each indentation
   tabstop = 2,                             -- insert 2 spaces for a tab
-  -- cursorline = true,                       -- highlight the current line TODO: revisit after colorscheme applied
-  -- cursorlineopt = "line",
-  -- cursorlineopt = "screenline",
-  -- cursorlineopt = "number",
+  cursorline = true,                       -- highlight the current line...
+  cursorlineopt = "number",                -- ...but only hightlight the leading margin (line number) part of the line
   number = true,                           -- set numbered lines
   laststatus = 3,
   showcmd = false,
@@ -52,7 +50,6 @@ local options = {
 --   stl = ' ',
 -- }
 
-print("options")
 vim.opt.shortmess:append "c"
 
 for k, v in pairs(options) do
