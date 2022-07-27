@@ -131,6 +131,7 @@ return packer.startup(function(use)
   -- use "lunarvim/darkplus.nvim"
   -- use "folke/tokyonight.nvim"
   -- use "lunarvim/colorschemes"
+  use "ellisonleao/gruvbox.nvim"
 
   -- Utility
   -- use "rcarriga/nvim-notify"
