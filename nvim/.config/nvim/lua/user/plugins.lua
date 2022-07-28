@@ -51,19 +51,19 @@ return packer.startup(function(use)
   -- Lua Development
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "nvim-lua/popup.nvim"
-  -- use "christianchiarulli/lua-dev.nvim"
+  use "christianchiarulli/lua-dev.nvim"
   -- use "folke/lua-dev.nvim"
 
   -- LSP
-  -- use "neovim/nvim-lspconfig" -- enable LSP
+  use "neovim/nvim-lspconfig" -- enable LSP
   -- use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  -- use "williamboman/mason.nvim"
-  -- use "williamboman/mason-lspconfig.nvim"
-  -- use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
-  -- use "ray-x/lsp_signature.nvim"
-  -- use "SmiteshP/nvim-navic"
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  use "ray-x/lsp_signature.nvim"
+  use "SmiteshP/nvim-navic"
   -- use "simrat39/symbols-outline.nvim"
-  -- use "b0o/SchemaStore.nvim"
+  use "b0o/SchemaStore.nvim"
   -- use "github/copilot.vim"
   -- use {
     -- "zbirenbaum/copilot.lua",
@@ -74,10 +74,10 @@ return packer.startup(function(use)
       -- end, 100)
     -- end,
   -- }
-  -- use "RRethy/vim-illuminate"
+  use "RRethy/vim-illuminate"
   -- use "j-hui/fidget.nvim"
   -- use { "lvimuser/lsp-inlayhints.nvim", branch = "readme" }
-  -- use "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
+  use "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
 
   -- Completion
   use "christianchiarulli/nvim-cmp"
@@ -85,9 +85,9 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  -- use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lsp"
   -- use "hrsh7th/cmp-emoji"
-  -- use "hrsh7th/cmp-nvim-lua"
+  use "hrsh7th/cmp-nvim-lua"
   -- use "zbirenbaum/copilot-cmp"
   -- use { "tzachar/cmp-tabnine", run = "./install.sh" }
 
@@ -220,7 +220,7 @@ return packer.startup(function(use)
   -- use "mfussenegger/nvim-jdtls"
 
   -- Rust
-  -- use { "christianchiarulli/rust-tools.nvim", branch = "modularize_and_inlay_rewrite" }
+  use { "christianchiarulli/rust-tools.nvim", branch = "modularize_and_inlay_rewrite" }
   -- use "Saecki/crates.nvim"
 
   -- Typescript TODO: set this up, also add keybinds to ftplugin
