@@ -96,19 +96,22 @@ return packer.startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- Syntax/Treesitter
-  -- use "nvim-treesitter/nvim-treesitter"
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
   -- use "JoosepAlviste/nvim-ts-context-commentstring"
-  -- use "p00f/nvim-ts-rainbow"
-  -- use "nvim-treesitter/playground"
-  -- use "windwp/nvim-ts-autotag"
-  -- use "nvim-treesitter/nvim-treesitter-textobjects"
+  use "p00f/nvim-ts-rainbow"
+  use "nvim-treesitter/playground"
+  use "windwp/nvim-ts-autotag"
+  use "nvim-treesitter/nvim-treesitter-textobjects"
   -- use "wellle/targets.vim"
   -- use "RRethy/nvim-treesitter-textsubjects"
-  -- use "kylechui/nvim-surround"
-  -- use {
-    -- "abecodes/tabout.nvim",
-    -- wants = { "nvim-treesitter" }, -- or require if not used so far
-  -- }
+  use "kylechui/nvim-surround"
+  use {
+    "abecodes/tabout.nvim",
+    wants = { "nvim-treesitter" }, -- or require if not used so far
+  }
 
   -- Marks
   -- use "christianchiarulli/harpoon"
