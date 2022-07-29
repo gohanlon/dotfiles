@@ -195,7 +195,7 @@ return packer.startup(function(use)
   -- use "is0n/jaq-nvim"
 
   -- Git
-  -- use "lewis6991/gitsigns.nvim"
+  use "lewis6991/gitsigns.nvim"
   -- use "f-person/git-blame.nvim"
   -- use "ruifm/gitlinker.nvim"
   -- use "mattn/vim-gist"
