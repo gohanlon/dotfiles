@@ -1,3 +1,4 @@
+require "user.autopairs"
 require "user.cmp"
 require "user.colorscheme"
 require "user.keymaps"

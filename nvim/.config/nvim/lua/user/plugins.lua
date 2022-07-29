@@ -205,7 +205,7 @@ return packer.startup(function(use)
   -- use "pwntester/octo.nvim"
 
   -- Editing Support
-  -- use "windwp/nvim-autopairs"
+  use "windwp/nvim-autopairs"
   -- use "monaqa/dial.nvim"
   -- use "nacro90/numb.nvim"
   -- use "andymass/vim-matchup"
