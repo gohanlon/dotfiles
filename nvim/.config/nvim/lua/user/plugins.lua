@@ -100,7 +100,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
-  -- use "JoosepAlviste/nvim-ts-context-commentstring"
+  use "JoosepAlviste/nvim-ts-context-commentstring"
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground"
   use "windwp/nvim-ts-autotag"
@@ -174,7 +174,7 @@ return packer.startup(function(use)
   -- use "christianchiarulli/lir.nvim"
 
   -- Comment
-  -- use "numToStr/Comment.nvim"
+  use "numToStr/Comment.nvim"
   -- use "folke/todo-comments.nvim"
 
   -- Terminal
