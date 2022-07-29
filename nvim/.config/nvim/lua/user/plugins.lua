@@ -115,9 +115,9 @@ return packer.startup(function(use)
   -- use "MattesGroeger/vim-bookmarks"
 
   -- Fuzzy Finder/Telescope
-  -- use "nvim-telescope/telescope.nvim"
-  -- use "nvim-telescope/telescope-media-files.nvim"
-  -- use "tom-anders/telescope-vim-bookmarks.nvim"
+  use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
+  use "tom-anders/telescope-vim-bookmarks.nvim"
 
   -- Note Taking
   -- use "mickael-menu/zk-nvim"
