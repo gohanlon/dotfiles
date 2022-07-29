@@ -148,7 +148,7 @@ return packer.startup(function(use)
   -- use "tversteeg/registers.nvim"
 
   -- Icon
-  -- use "kyazdani42/nvim-web-devicons"
+  use "kyazdani42/nvim-web-devicons"
 
   -- Debugging
   -- use "mfussenegger/nvim-dap"
@@ -170,7 +170,7 @@ return packer.startup(function(use)
   -- use "lukas-reineke/indent-blankline.nvim"
 
   -- File Explorer
-  -- use "kyazdani42/nvim-tree.lua"
+  use "kyazdani42/nvim-tree.lua"
   -- use "christianchiarulli/lir.nvim"
 
   -- Comment
