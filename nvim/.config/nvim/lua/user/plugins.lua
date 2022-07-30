@@ -140,7 +140,7 @@ return packer.startup(function(use)
   -- use "rcarriga/nvim-notify"
   -- use "stevearc/dressing.nvim"
   -- use "ghillb/cybu.nvim"
-  -- use "moll/vim-bbye"
+  use "moll/vim-bbye"
   -- use "lewis6991/impatient.nvim"
   -- use "lalitmee/browse.nvim"
 
@@ -157,6 +157,7 @@ return packer.startup(function(use)
   -- use "Pocco81/DAPInstall.nvim"
 
   -- Tabline
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = {'kyazdani42/nvim-web-devicons', 'moll/vim-bbye'}}
   -- use "akinsho/bufferline.nvim"
   -- use "tiagovla/scope.nvim"
 
