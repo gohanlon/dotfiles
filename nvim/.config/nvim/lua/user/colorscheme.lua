@@ -1,6 +1,6 @@
 local status_ok, gruvbox = pcall(require, "gruvbox")
 if not status_ok then
-  vim.notify("gruvbox plugin not found")
+  vim.notify("Warning: 'gruvbox' required but not found")
   return
 end
 

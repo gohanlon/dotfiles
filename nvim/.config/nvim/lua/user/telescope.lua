@@ -6,7 +6,7 @@
 
 local status_ok, telescope = pcall(require, "telescope")
 if not status_ok then
-  vim.notify("Warning: required 'telescope' but not found")
+  vim.notify("Warning: 'telescope' required but not found")
   return
 end
 
