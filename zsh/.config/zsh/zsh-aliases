@@ -58,6 +58,7 @@ alias gai='git add --interactive'
 alias gap='git add --patch'
 alias gci='git commit'
 alias gcia='git commit --amend'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
 # Use fzf to select a file from changed files to git-add
 # Source: https://spin.atomicobject.com/2018/04/05/fuzzy-find-git-add/
