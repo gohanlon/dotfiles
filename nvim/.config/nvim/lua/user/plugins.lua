@@ -215,7 +215,7 @@ return packer.startup(function(use)
   -- use "karb94/neoscroll.nvim"
 
   -- Motion
-  -- use "christianchiarulli/hop.nvim"
+  use "phaazon/hop.nvim"
   -- use "jinh0/eyeliner.nvim"
 
   -- Keybinding
