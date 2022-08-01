@@ -44,6 +44,9 @@ CYGWIN* | MINGW32* | MSYS* | MINGW*)
 	;;
 esac
 
+alias bi='brew install'
+alias bic='brew install --cask'
+
 alias ll='ls -la'
 
 alias g='git status'
