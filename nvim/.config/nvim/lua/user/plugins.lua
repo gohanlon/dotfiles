@@ -219,7 +219,7 @@ return packer.startup(function(use)
   -- use "jinh0/eyeliner.nvim"
 
   -- Keybinding
-  -- use "folke/which-key.nvim"
+  use "folke/which-key.nvim"
 
   -- Java
   -- use "mfussenegger/nvim-jdtls"
