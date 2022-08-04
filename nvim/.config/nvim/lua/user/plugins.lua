@@ -169,7 +169,7 @@ return packer.startup(function(use)
   -- use "goolord/alpha-nvim"
 
   -- Indent
-  -- use "lukas-reineke/indent-blankline.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- File Explorer
   use "kyazdani42/nvim-tree.lua"
