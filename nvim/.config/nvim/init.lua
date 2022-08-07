@@ -10,6 +10,7 @@ require "user.hop"
 require "user.indentline"
 require "user.keymaps"
 require "user.lsp"
+require "user.neogit"
 require "user.nvim-tree"
 require "user.bufferline" -- must come after user.options
 require "user.plugins"
