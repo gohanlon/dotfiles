@@ -19,4 +19,4 @@
   colorMovedWS = allow-indentation-change
 
 [color]
-  ui = always
+  ui = auto
