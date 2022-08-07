@@ -37,8 +37,8 @@ local options = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  -- colorcolumn = "80",
-  -- colorcolumn = "120",
+  textwidth = 120,
+  colorcolumn = "+1",                      -- i.e. textwdith+1
 }
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
