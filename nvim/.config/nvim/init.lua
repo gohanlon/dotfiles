@@ -13,6 +13,7 @@ require "user.lsp"
 require "user.nvim-tree"
 require "user.bufferline" -- must come after user.options
 require "user.plugins"
+require "user.surround"
 require "user.telescope"
 require "user.treesitter"
 require "user.whichkey"
