@@ -6,6 +6,8 @@ local term_opts = { silent = false }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
+-- NB: :help keycodes
+
 --Remap space as leader key
 keymap("n", "<Space>", "", opts)
 vim.g.mapleader = " "
