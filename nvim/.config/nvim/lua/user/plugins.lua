@@ -116,6 +116,7 @@ return packer.startup(function(use)
 
   -- Marks
   -- use "christianchiarulli/harpoon"
+  use { "ThePrimeagen/harpoon", requires = "nvim-lua/plenary.nvim" }
   -- use "MattesGroeger/vim-bookmarks"
 
   -- Fuzzy Finder/Telescope
