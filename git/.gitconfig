@@ -8,6 +8,7 @@
 
 [alias]
   br = branch
+  co = checkout
 
 [commit]
   verbose = true
